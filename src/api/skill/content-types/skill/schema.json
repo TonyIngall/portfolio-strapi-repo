@@ -4,7 +4,8 @@
   "info": {
     "singularName": "skill",
     "pluralName": "skills",
-    "displayName": "Skills"
+    "displayName": "Skills",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -22,10 +23,10 @@
     "Type": {
       "type": "enumeration",
       "enum": [
-        "Language",
-        "Framework",
-        "Library",
-        "Software"
+        "Technologies",
+        "Frameworks",
+        "Workflow",
+        "CMS"
       ]
     }
   }

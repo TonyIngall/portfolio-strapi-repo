@@ -567,6 +567,7 @@ export interface ApiHomeHome extends Struct.SingleTypeSchema {
 export interface ApiSkillSkill extends Struct.CollectionTypeSchema {
   collectionName: 'skills';
   info: {
+    description: '';
     displayName: 'Skills';
     pluralName: 'skills';
     singularName: 'skill';
@@ -587,7 +588,7 @@ export interface ApiSkillSkill extends Struct.CollectionTypeSchema {
     publishedAt: Schema.Attribute.DateTime;
     slug: Schema.Attribute.UID<'name'>;
     Type: Schema.Attribute.Enumeration<
-      ['Language', 'Framework', 'Library', 'Software']
+      ['Technologies', 'Frameworks', 'Workflow', 'CMS']
     >;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &

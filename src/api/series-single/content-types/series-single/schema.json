@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "series",
+  "info": {
+    "singularName": "series-single",
+    "pluralName": "series",
+    "displayName": "Series",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "slug": {
+      "type": "uid"
+    },
+    "colour": {
+      "type": "enumeration",
+      "enum": [
+        "Green",
+        "Blue",
+        "Yellow",
+        "Orange",
+        "Pink",
+        "Purple"
+      ]
+    }
+  }
+}

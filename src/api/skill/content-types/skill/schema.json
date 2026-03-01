@@ -20,7 +20,7 @@
       "type": "uid",
       "targetField": "name"
     },
-    "Type": {
+    "type": {
       "type": "enumeration",
       "enum": [
         "Technology",

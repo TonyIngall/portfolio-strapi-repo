@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_shared_codeblocks",
+  "info": {
+    "displayName": "Codeblock",
+    "icon": "code",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "content": {
+      "type": "blocks"
+    },
+    "language": {
+      "type": "enumeration",
+      "enum": [
+        "html",
+        "css",
+        "js",
+        "ts",
+        "php",
+        "txt",
+        "other"
+      ]
+    }
+  }
+}

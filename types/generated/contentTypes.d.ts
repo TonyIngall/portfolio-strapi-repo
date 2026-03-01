@@ -588,7 +588,7 @@ export interface ApiSkillSkill extends Struct.CollectionTypeSchema {
     publishedAt: Schema.Attribute.DateTime;
     slug: Schema.Attribute.UID<'name'>;
     Type: Schema.Attribute.Enumeration<
-      ['Technologies', 'Frameworks', 'Workflow', 'CMS']
+      ['Technology', 'Framework', 'Library', 'Workflow']
     >;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &

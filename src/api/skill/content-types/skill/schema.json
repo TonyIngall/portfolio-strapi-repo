@@ -23,10 +23,10 @@
     "Type": {
       "type": "enumeration",
       "enum": [
-        "Technologies",
-        "Frameworks",
-        "Workflow",
-        "CMS"
+        "Technology",
+        "Framework",
+        "Library",
+        "Workflow"
       ]
     }
   }

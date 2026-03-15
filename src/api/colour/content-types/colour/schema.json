@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "colours",
+  "info": {
+    "singularName": "colour",
+    "pluralName": "colours",
+    "displayName": "Colours"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "hex": {
+      "type": "customField",
+      "customField": "plugin::color-picker.color",
+      "regex": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$",
+      "required": true
+    }
+  }
+}

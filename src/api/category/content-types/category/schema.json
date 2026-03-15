@@ -18,14 +18,19 @@
     "slug": {
       "type": "uid"
     },
+    "colour": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::colour.colour"
+    },
+    "description": {
+      "type": "text"
+    },
     "articles": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::article.article",
       "mappedBy": "categories"
-    },
-    "description": {
-      "type": "text"
     }
   }
 }

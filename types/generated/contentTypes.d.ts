@@ -685,9 +685,7 @@ export interface ApiSeriesSingleSeriesSingle
     };
   };
   attributes: {
-    colour: Schema.Attribute.Enumeration<
-      ['Green', 'Blue', 'Yellow', 'Orange', 'Pink', 'Purple']
-    >;
+    colour: Schema.Attribute.Relation<'oneToOne', 'api::colour.colour'>;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;

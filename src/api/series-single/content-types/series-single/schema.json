@@ -18,27 +18,21 @@
   "attributes": {
     "title": {
       "type": "string",
-      "required": true,
-      "unique": true,
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
-      }
+      },
+      "required": true,
+      "unique": true
     },
     "slug": {
       "type": "uid"
     },
     "colour": {
-      "type": "enumeration",
-      "enum": [
-        "Green",
-        "Blue",
-        "Yellow",
-        "Orange",
-        "Pink",
-        "Purple"
-      ]
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::colour.colour"
     }
   }
 }
